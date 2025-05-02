@@ -16,8 +16,10 @@ export default function StatePage() {
                 <p className="section1-caption ibm-plex-sans-thai-extralight">โดยเฉพาะ tailwind ที่นำมาใช้เพื่อแทนการเขียน css และเริ่มใช้ Next.js</p>
             </div>
             <div className="bg-red-300 text-black"><br></br>
-                <h1 className="text-center text-2xl">Switch ไฟ</h1>
-                <p className="text-center text-2xl">เรียนรู้การ toggle state</p><br></br>
+                <h1 className="text-center text-2xl ibm-plex-sans-thai-bold">Switch ไฟ</h1>
+                <p className="text-center text-2xl ibm-plex-sans-thai-bold">เรียนรู้การ toggle state</p>
+                <p className="text-center text-2xl ibm-plex-sans-thai-bold">state เป็นเหมือน Memory ในการเก็บข้อมูลไว้ จะเป็น boolen text number อะไรก็ตาม</p><br></br>
+
                 <div className="flex justify-center">
                     <button className="bg-red-600 p-4 rounded-2xl text-3xl" onClick={() => setIsLightOn((prve) => !prve)}>เปิด / ปิดไฟ</button>
                 </div>
