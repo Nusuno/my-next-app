@@ -24,3 +24,170 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/**font**/
+.ibm-plex-sans-thai-thin {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-extralight {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-light {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-regular {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-medium {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-semibold {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-bold {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section1-box {
+  background-color: rgb(255, 227, 208);
+  padding: 20px;
+}
+
+.section1-name {
+  text-align: center;
+  color: blue;
+  font-size: 60px;
+}
+
+.section1-meta-data {
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+
+.section1-profile-img {
+  width: 30%;
+  margin-left: 35%;
+  border: solid 2px black
+}
+
+.section1-caption {
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+
+.section2-box {
+  background-color: rgb(2, 98, 222);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2-contact-link {
+  color: white;
+  font-size: 80px;
+}
+
+.section3-box {
+  display: flex;
+  justify-content: center;
+}
+
+.section3-box-A {
+  background-color: rgb(2, 98, 222);
+  text-align: center;
+  width: 100%;
+  border: solid 3.5px white
+}
+
+.section3-box-B {
+  background-color: rgb(255, 227, 208);
+  text-align: center;
+  width: 100%;
+  border: solid 3.5px white
+}
+
+.section3-title-A {
+  color: white;
+  font-size: 35px;
+}
+
+.section3-subText-A-1 {
+  color: white;
+  font-size: 25px;
+}
+
+.section3-subText-A-2 {
+  color: white;
+  font-size: 25px;
+
+}
+
+.section3-title-B {
+  color: blue;
+  font-size: 30px;
+}
+
+.section3-subText-B-1 {
+  color: blue;
+  font-size: 25px;
+}
+
+.section3-subText-B-2 {
+  color: blue;
+  font-size: 25px;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cce5ff;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.about-me-box {
+  background-color: rgb(255, 227, 208);
+  padding: 20px;
+}
+
+.about-me-sub-box {
+  border-radius: 20%;
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+}
