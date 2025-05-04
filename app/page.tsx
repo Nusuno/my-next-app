@@ -23,13 +23,16 @@ export default function IndexPage() {
   {/*section 3*/}
   <div className="section3-box">
     <div className="section3-box-A">
-      <h1 className="section3-title-A ibm-plex-sans-thai-bold">My Experience So Far</h1>
-      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">Education</p>
-      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">Hight School</p>
-      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">********</p>
-      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">********</p>
-      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">********</p>
-      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">********</p>
+      <h1 className="section3-title-A ibm-plex-sans-thai-bold">ประสบการณ์</h1>
+      <p className="section3-subText-A-1 ibm-plex-sans-thai-bold">การศึกษา</p>
+      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">ระดับประถมศึกษา</p>
+      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">โรงเรียนบ้านคลองสมบูรณ์ จังหวัดสมุทรสงคราม</p>
+      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">ระดับมัธยมศึกษา</p>
+      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">โรงเรียนบ้านคลองสมบูรณ์ จังหวัดสมุทรสงคราม</p>
+      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">ระดับประกาศนียบัตรวิชาชีพ</p>
+      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">วิทยาลัยเทคนิคสมุทรสงคราม</p>
+      <p style={{fontWeight: 300}} className="section3-subText-A-2 ibm-plex-sans-thai-bold">ระดับประกาศนียบัตรวิชาชีพชั้นสูง</p>
+      <p className="section3-subText-A-1 ibm-plex-sans-thai-extralight">วิทยาลัยเทคนิคสมุทรสงคราม</p>
     </div>
     <div className="section3-box-B">
       <h1 className="section3-title-B ibm-plex-sans-thai-bold">Skill &amp; Interests</h1>
