@@ -31,20 +31,25 @@ export default function UseEffectPage() {
         <h1 className="text-6xl text-center ibm-plex-sans-thai-bold">
           UseEffect
         </h1>
-
-        {movieList.map((item, index) => (
-          <div className="p-4 w-80 bg-blue-300">
-            <div className="bg-blue-200 p-4">
-              <MovieCard src={item.poster_path} />;
-              <h2 className="text-2xl text-black font-bold">{item.title}</h2>
-              <p className="text-xl text-black">{item.overview}</p>
-            </div>
-          </div>
-        ))}
-
-        <p className="text-center text-3xl p-4 ibm-plex-sans-thai-extralight">
-          useEffect หรือ react Hook เป็นการติดต่อกับ System ภายนอก
+        <p className="text-center text-3xl ibm-plex-sans-thai-extralight">
+          useEffect หรือ react Hook เป็นการติดต่อกับ System ภายนอก (API)
         </p>
+
+        <div className=" justify-items-center p-4">
+          {movieList.map((item, index) => (
+            <div className="p-4 w-100 bg-blue-300">
+              <div className="bg-blue-200 p-4">
+                <MovieCard src={item.poster_path} />;
+                <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
+                  {item.title}
+                </h2>
+                <p className="text-xl text-black ibm-plex-sans-thai-extralight">
+                  {item.overview}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <Footer />
