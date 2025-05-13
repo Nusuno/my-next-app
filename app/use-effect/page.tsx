@@ -43,6 +43,9 @@ export default function UseEffectPage() {
                 <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
                   {item.title}
                 </h2>
+                <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
+                  {item.name}
+                </h2>
                 <p className="text-xl text-black ibm-plex-sans-thai-extralight">
                   {item.overview}
                 </p>
