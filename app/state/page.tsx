@@ -83,6 +83,13 @@ export default function StatePage() {
             >
               *2
             </button>
+            <button
+              className="p-4 font-bold text-2xl bg-red-600 text-white rounded-xl"
+              type="button"
+              onClick={() => setCount((prev) => 0)}
+            >
+              Reset
+            </button>
           </div>
           <div className="text-center mt-4">
             <h1 className="text-center text-3xl font-bold">สัตว์ที่ชอบคือ</h1>
