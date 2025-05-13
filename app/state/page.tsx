@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function StatePage() {
   const [count, setCount] = useState(0);
   const [isLightOn, setIsLightOn] = useState(false);
+  const [animal, setAnimal] = useState("?");
   return (
     <div className="text-center">
       <MenuBar />
@@ -64,16 +65,50 @@ export default function StatePage() {
             <button
               className="p-4 font-bold text-2xl bg-yellow-600 rounded-xl"
               type="button"
-              onClick={() => setCount(count-1)}
+              onClick={() => setCount((prev) => prev -1)}
             >
               -1
             </button>
             <button
               className="p-4 font-bold text-2xl bg-green-600 rounded-xl"
               type="button"
-              onClick={() => setCount(count+1)}
+              onClick={() => setCount(count + 1)}
             >
               +1
+            </button>
+            <button
+              className="p-4 font-bold text-2xl bg-blue-600 rounded-xl"
+              type="button"
+              onClick={() => setCount(count * 2)}
+            >
+              *2
+            </button>
+          </div>
+          <div className="text-center mt-4">
+            <h1 className="text-center text-3xl font-bold">สัตว์ที่ชอบคือ</h1>
+            <h1 className="text-2xl font-bold">{animal}</h1>
+          </div>
+          <div className="flex justify-center gap-4 mt-4">
+          <button
+              className="p-4 font-bold text-2xl bg-orange-500 rounded-xl"
+              type="button"
+              onClick={() => setAnimal((prev) => "Fox")}
+            >
+              Fox
+            </button>
+            <button
+              className="p-4 font-bold text-2xl bg-gray-400 rounded-xl"
+              type="button"
+              onClick={() => setAnimal((prev) => "Wolf")}
+            >
+              Wolf
+            </button>
+            <button
+              className="p-4 font-bold text-2xl bg-purple-400 rounded-xl"
+              type="button"
+              onClick={() => setAnimal((prev) => "Cat")}
+            >
+              Cat
             </button>
           </div>
         </div>
