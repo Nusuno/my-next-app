@@ -1,6 +1,8 @@
 "use client";
 import Footer from "@/components/Footer";
 import MenuBar from "@/components/MenuBar";
+import ImageProfile from "@/components/imageProfile";
+
 import { useState } from "react";
 
 export default function StatePage() {
@@ -9,15 +11,11 @@ export default function StatePage() {
   const [animal, setAnimal] = useState("?");
   return (
     <div className="text-center">
-      <MenuBar />
+      <MenuBar page={"State"}/>
       {/*section 1*/}
       <div className="section1-box">
         <h1 className="section1-name ibm-plex-sans-thai-bold">State Page</h1>
-        <img
-          className="section1-profile-img"
-          src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp"
-          alt="Profile-img"
-        />
+        <ImageProfile src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp"/>
         <p className="section1-caption ibm-plex-sans-thai-extralight">
           เนื้อหางาน week3 จะเป็นการสอนเพิ่มเติมเกี่ยวกับ css สอนและเริ่มต้นใช้
           framework ต่างๆ"

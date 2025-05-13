@@ -1,16 +1,17 @@
 import MenuBar from "@/components/MenuBar";
 import Footer from "@/components/Footer";
+import ImageProfile from "@/components/imageProfile";
 export default function IndexPage() {
   return (
 <div>
   {/*menu*/}
-    <MenuBar/>
+    <MenuBar page={"Home"}/>
   {/*section 1*/}
   <div className="section1-box">
     <h1 className="section1-name ibm-plex-sans-thai-bold">Hey I'm Nuttawut</h1>
     <p className="section1-meta-data ibm-plex-sans-thai-extralight">I'm a student at Rajamangala University of
       Technology Krungthep</p>
-    <img className="section1-profile-img" src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp" alt="Profile-img" />
+      <ImageProfile src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp"/>
     <p className="section1-caption ibm-plex-sans-thai-extralight">คนที่กำมือแล้วทำให้ดูเหมือนกับมีของบางอย่างอยู่ในมือคือ "นักมายากล"</p>
     <p className="section1-caption ibm-plex-sans-thai-extralight">และคนที่ต้องทายของในมือให้ถูกก่อนที่จะแบมือเฉลยก็คือ "นักสืบ"</p>
   </div>
