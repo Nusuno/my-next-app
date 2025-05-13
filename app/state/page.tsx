@@ -11,11 +11,11 @@ export default function StatePage() {
   const [animal, setAnimal] = useState("?");
   return (
     <div className="text-center">
-      <MenuBar page={"State"}/>
+      <MenuBar page={"State"} />
       {/*section 1*/}
       <div className="section1-box">
         <h1 className="section1-name ibm-plex-sans-thai-bold">State Page</h1>
-        <ImageProfile src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp"/>
+        <ImageProfile src="https://cms.dmpcdn.com/moviearticle/2024/01/30/049ebed0-bf2d-11ee-8c12-75bbd15bc531_webp_original.webp" />
         <p className="section1-caption ibm-plex-sans-thai-extralight">
           เนื้อหางาน week3 จะเป็นการสอนเพิ่มเติมเกี่ยวกับ css สอนและเริ่มต้นใช้
           framework ต่างๆ"
@@ -63,7 +63,7 @@ export default function StatePage() {
             <button
               className="p-4 font-bold text-2xl bg-yellow-600 rounded-xl"
               type="button"
-              onClick={() => setCount((prev) => prev -1)}
+              onClick={() => setCount((prev) => prev - 1)}
             >
               -1
             </button>
@@ -101,7 +101,7 @@ export default function StatePage() {
             <h1 className="text-2xl font-bold">{animal}</h1>
           </div>
           <div className="flex justify-center gap-4 mt-4">
-          <button
+            <button
               className="p-4 font-bold text-2xl bg-orange-500 rounded-xl"
               type="button"
               onClick={() => setAnimal((prev) => "Fox")}
