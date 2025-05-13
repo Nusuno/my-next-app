@@ -84,6 +84,13 @@ export default function StatePage() {
               *2
             </button>
             <button
+              className="p-4 font-bold text-2xl bg-yellow-200 rounded-xl"
+              type="button"
+              onClick={() => setCount(count / 2)}
+            >
+              /2
+            </button>
+            <button
               className="p-4 font-bold text-2xl bg-red-600 text-white rounded-xl"
               type="button"
               onClick={() => setCount((prev) => 0)}
