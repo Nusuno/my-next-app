@@ -1,5 +1,5 @@
 type MovieCardProps = {
-  src: string;
+  src?: string;
 };
 
 export default function MovieCard(props: MovieCardProps) {

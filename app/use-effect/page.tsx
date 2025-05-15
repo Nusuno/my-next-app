@@ -27,7 +27,7 @@ export default function UseEffectPage() {
     <div>
       <MenuBar page={"UseEffect"} />
 
-      <div className="bg-blue-500 text-center p-4">
+      <div className=" bg-blue-500 text-center p-4">
         <h1 className="text-6xl text-center ibm-plex-sans-thai-bold">
           UseEffect
         </h1>
@@ -35,8 +35,13 @@ export default function UseEffectPage() {
           useEffect หรือ react Hook เป็นการติดต่อกับ System ภายนอก (API)
         </p>
 
-        <div className=" justify-items-center p-4">
-          {movieList.map((item, index) => (
+        <div className="justify-items-center p-4">
+          {movieList.map((item: {
+            title?: string;
+            name?: string;
+            overview?: string;
+            poster_path?: string;
+          },index) => (
             <div className="p-4 w-100 bg-blue-300">
               <div className="bg-blue-200 p-4">
                 <MovieCard src={item.poster_path} />;
