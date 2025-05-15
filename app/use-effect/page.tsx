@@ -62,6 +62,7 @@ export default function UseEffectPage() {
                     <p className="text-xl text-black ibm-plex-sans-thai-extralight">
                       {item.overview}
                     </p>
+                    <h3 className="text-xl text-black ibm-plex-sans-thai-extralight">Media Type : {item.media_type}</h3>
                   </div>
                 </div>
               )
