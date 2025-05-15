@@ -37,32 +37,35 @@ export default function UseEffectPage() {
         </p>
 
         <div className="justify-items-center p-4">
-          {movieList.map(
-            (
-              item: {
-                title?: string;
-                name?: string;
-                overview?: string;
-                poster_path?: string;
-              },
-              index
-            ) => (
-              <div className="p-4 w-100 bg-blue-300">
-                <div className="bg-blue-400 p-4">
-                  <MovieCard src={item.poster_path} />
-                  <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
-                    {item.title}
-                  </h2>
-                  <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
-                    {item.name}
-                  </h2>
-                  <p className="text-xl text-black ibm-plex-sans-thai-extralight">
-                    {item.overview}
-                  </p>
+          {movieList
+            .filter((item: { media_type?: string }) => item.media_type === "tv")
+            .map(
+              (
+                item: {
+                  title?: string;
+                  name?: string;
+                  overview?: string;
+                  poster_path?: string;
+                  media_type?: string;
+                },
+                index
+              ) => (
+                <div className="p-4 w-100 bg-blue-300">
+                  <div className="bg-blue-400 p-4">
+                    <MovieCard src={item.poster_path} />
+                    <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
+                      {item.title}
+                    </h2>
+                    <h2 className="text-2xl text-black ibm-plex-sans-thai-bold">
+                      {item.name}
+                    </h2>
+                    <p className="text-xl text-black ibm-plex-sans-thai-extralight">
+                      {item.overview}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )
-          )}
+              )
+            )}
         </div>
       </div>
       <Footer />
