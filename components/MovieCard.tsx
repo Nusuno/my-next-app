@@ -11,5 +11,5 @@ export default function MovieCard(props: MovieCardProps) {
         alt="Thunderbolts*"
       ></img>
     </div>
-  );
+  )
 }
